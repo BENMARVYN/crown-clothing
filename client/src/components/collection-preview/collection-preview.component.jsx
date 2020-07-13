@@ -5,7 +5,7 @@ import CollectionItem from '../collection-item/collection-item.component';
 
 import { CollectionPreviewContainer, CollectionItemsPreview, CollectionTitle } from './collection-preview.styles';
 
-const CollectionPreview = ({ title, items, match, history }) => (
+export const CollectionPreview = ({ title, items, match, history }) => (
   <CollectionPreviewContainer>
     <CollectionTitle
     onClick={() => history.push(`${match.url}/${title.toLowerCase()}`)}
