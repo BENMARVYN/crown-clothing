@@ -20,7 +20,7 @@ const ShopPage = lazy(() => import('./pages/shop/shop.component'));
 const AuthPage = lazy(() => import('./pages/auth/auth.component'));
 const CheckOutPage = lazy(() => import('./pages/checkout/checkout.component'));
 
-const App = ({ checkUserSession, currentUser }) => {
+export const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
     checkUserSession();
   }, [checkUserSession]);
