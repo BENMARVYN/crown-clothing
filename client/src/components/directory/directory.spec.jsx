@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Directory from "./directory.component";
+import { Directory } from "./directory.component";
 
 describe("Testing Directory component", () => {
   const mockSections = [
@@ -14,7 +14,7 @@ describe("Testing Directory component", () => {
       match: "None",
     },
   ];
-  it.skip("Should match snapshot", () => {
+  it("Should match snapshot", () => {
     expect(shallow(<Directory sections={mockSections} />)).toMatchSnapshot();
   });
 });
